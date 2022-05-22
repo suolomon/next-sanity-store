@@ -12,7 +12,7 @@ const Home = ({ productData, bannerData}) => {
         <p>Lorem ipsum dolor, adipisicing elit.</p>
       </div>
       <div className="products-container">
-        {productData?.map((product) => product.name)}
+        {productData?.map((product) => <Product key={product.key} product={product} />)}
       </div>
       <FooterBanner />
     </div>
